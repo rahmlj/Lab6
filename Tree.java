@@ -1,9 +1,10 @@
 class Tree {
 
-    String treeName;
-    String treeType;
-    boolean leavesFall;
-   String leafColor;
+    private String treeName;
+    private String treeType;
+    private boolean leavesFall;
+    private String leafColor;
+    
     Tree() {
       String treeName = "";
       String treeType = "";
