@@ -57,12 +57,14 @@ class Tree {
     
 
     void print(){
-     if (leavesFall = false){
-     System.out.println("This is a " + treeName +" tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". " + "It does not lose its leaves for the winter.");
+
+     String checkLeaves;
+      if(leavesFall)
+        checkLeaves = "does";
+      else
+        checkLeaves = "does not";
+     System.out.println("This is a " + treeName +" tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". It " + checkLeaves + " lose its leaves for the winter.");
     }
-    else if (leavesFall = true){
-       System.out.println("This is a " + treeName +" tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". " + "It does lose its leaves for the winter.");
-    }
-  }
+  
 
 }
