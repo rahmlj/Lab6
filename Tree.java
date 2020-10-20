@@ -3,9 +3,7 @@ class Tree {
     String treeName;
     String treeType;
     boolean leavesFall;
-    String leafColor;
-
-
+   String leafColor;
     Tree() {
       String treeName = "";
       String treeType = "";
@@ -15,6 +13,7 @@ class Tree {
     }
 
     Tree(String theTreeName, String theTreeType, boolean theLeavesFall, String theLeafColor){
+      
       treeName = theTreeName;
       treeType = theTreeType;
       leavesFall = theLeavesFall;
@@ -22,18 +21,7 @@ class Tree {
 
     }
 
-    void setName(String theTreeName) {
-      treeName = theTreeName;
-    }
-   void setType(String theTreeType) {
-      treeType = theTreeType
-    }
-   void setFall(boolean theLeavesFall) {
-      leavesFall = theLeavesFall;
-    }
-    void setColor(String theLeafColor) {
-      leafColor = theLeafColor;
-    }
+   
     String getName() {
       return treeName;
   
@@ -43,18 +31,37 @@ class Tree {
 
     }
     boolean getFall() {
-      false = System.out.println("It does not lose its leaves for the winter");
-      true = System.out.println("It does lose its leaves for the winter");
-
+      
       return leavesFall;
-
      }
     String getColor(){
       return leafColor;
 
     }
-    void print(){
-     System.out.println("This is a " + treeName +". It is a " + treeType + " and its leaves are currently " + leafColor + ". " + leavesFall);
+
+        void setName(String theTreeName) {
+      treeName = theTreeName;
     }
+   void setType(String theTreeType) {
+      treeType = theTreeType;
+    }
+   void setFall(boolean theLeavesFall) {
+      
+      leavesFall = theLeavesFall;
+    }
+    void setColor(String theLeafColor) {
+      leafColor = theLeafColor;
+    }
+
+    
+
+    void print(){
+     if (leavesFall = false){
+     System.out.println("This is a " + treeName +" tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". " + "It does not lose its leaves for the winter.");
+    }
+    else if (leavesFall = true){
+       System.out.println("This is a " + treeName +" tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". " + "It does lose its leaves for the winter.");
+    }
+  }
 
 }
